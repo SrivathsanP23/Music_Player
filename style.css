@@ -1,0 +1,177 @@
+body {
+    background: linear-gradient(45deg, black, #282C35);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 250, 255, .45);
+    backdrop-filter: blur(1px);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+h1 {
+    color: whitesmoke;
+    position: absolute;
+    top: 550px;
+    left: 800px;
+}
+
+
+p {
+    color: whitesmoke;
+}
+
+
+p {
+    color: whitesmoke;
+    position: absolute;
+    top: 600px;
+    left: 840px;
+}
+
+#prev {
+
+    border: none;
+    position: absolute;
+    top: 650px;
+    left: 745px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+#play {
+
+    border: none;
+    position: absolute;
+    top: 650px;
+    left: 840px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+#next {
+
+    border: none;
+    position: absolute;
+    top: 650px;
+    left: 930px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.prev {
+    border: 1px #282C35;
+    height: 5vh;
+}
+
+.progress-bar-container {
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    top: 510px;
+    margin-bottom: 10px;
+    left: 700px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: tan;
+    border-radius: 10px 10px 10px 10px;
+    width: 0%;
+}
+
+
+.current_song {
+
+    height: 100%;
+    width: 500px;
+    background: rgba(33, 32, 28, 0.12);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .album {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container .album .outer {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(56, 26, 81);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.container .album .outer .inner {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+.container .album .outer .inner img {
+    width: 100%;
+}
+
+
+
+.album.rotate .outer {
+    z-index: -1;
+    animation: rotate 20s infinite linear;
+    animation-play-state: running;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.current-time {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 12px;
+    top: 530px;
+    left: 700px;
+}
+
+.song-duration {
+    position: absolute;
+    top: 530px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 12px;
+    left: 970px;
+
+}
